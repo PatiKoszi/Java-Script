@@ -1,28 +1,17 @@
-/*var age = 5;
+for (i = 0; i < 10; i ++) {
 
-while (age < 10){
+    if (i === 5 || i === 3) {
+//just omit the point 5 and 3 and go to up of the code
+        continue;
+    }
 
-    console.log("Your age is less then 10")
-    age ++;
+  console.log(i);
+
+    if (i ===7) {
+//below end tle loop and finish
+        break;
+    }
 
 }
 
-    document.write('You are over 10') */
-
-
-/*below it is exacly the same but with the "for" loop
-for (age = 5; age < 10; age++) {
-
-    console.log("Your age is less then 10")
-}
-
-document.write("You are over 10") */
-
-var links = document.getElementsByTagName("a");
-
-for (i =1; i <= links.length; i++) {
-
-    console.log("this is link number" +i);
-}
-
-document.write("all links now looped");
+console.log("I have broke out of the loop")
