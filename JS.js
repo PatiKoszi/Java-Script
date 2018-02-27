@@ -1,8 +1,9 @@
-//Example how we can use Loops
+function getAverage (a, b, c, d) {
 
-var links = document.getElementsByTagName("a");
-
-    for ( i = 0; i < links.lenght; i++ ){
-
-        links[i].className = "link-" + i;
+    var average = (a+b+c+d) / 4;
+    console.log(average);
+    return average;
 }
+
+var myResult = getAverage(4, 5, 8, 9);
+console.log("The average is + myResult");
