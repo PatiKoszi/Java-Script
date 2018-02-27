@@ -1,17 +1,8 @@
-for (i = 0; i < 10; i ++) {
+//Example how we can use Loops
 
-    if (i === 5 || i === 3) {
-//just omit the point 5 and 3 and go to up of the code
-        continue;
-    }
+var links = document.getElementsByTagName("a");
 
-  console.log(i);
+    for ( i = 0; i < links.lenght; i++ ){
 
-    if (i ===7) {
-//below end tle loop and finish
-        break;
-    }
-
+        links[i].className = "link-" + i;
 }
-
-console.log("I have broke out of the loop")
