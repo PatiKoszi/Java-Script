@@ -1,19 +1,16 @@
- var str = "Hello, world";
- console.log(str);
+var myArray = []; //definision
 
- var str2 = str.slice(2,9);
- console.log(str2);
+myArray[0] = 25;
+console.log(myArray[0]);
 
- var str3 = str.slice(2);
- console.log(str3);
+myArray[1] = true;
+console.log(myArray[1]);
 
- var tags = "meat, ham, salami, pork, beef,chicken"
- console.log(tags);
+console.log(myArray);
 
- var tagsArray = tags.split(",");
- console.log(tagsArray);
+var myArray2 = [22, 45, 'hi', true];
+console.log(myArray2);
 
- var tagsArray = tags.split("");
- console.log(tagsArray);
-
- //remember link under movie
+console.log(myArray2.length);
+console.log(myArray2.sort());
+console.log(myArray2.reverse());
