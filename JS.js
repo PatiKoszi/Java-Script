@@ -1,16 +1,11 @@
-var myArray = []; //definision
+var myString = new String();
+myString = "Hellow";
 
-myArray[0] = 25;
-console.log(myArray[0]);
+console.log(myString);
+console.log(myString.length);
+console.log(myString.toLowerCase());
 
-myArray[1] = true;
-console.log(myArray[1]);
+var myString2 = "History of Poland";
+console.log(myString2.length);
+console.log(myString2.toUpperCase());
 
-console.log(myArray);
-
-var myArray2 = [22, 45, 'hi', true];
-console.log(myArray2);
-
-console.log(myArray2.length);
-console.log(myArray2.sort());
-console.log(myArray2.reverse());
