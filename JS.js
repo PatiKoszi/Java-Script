@@ -1,24 +1,40 @@
-//Construction Functions starts with Capital letter
+var myDate = new Date();
+console.log(myDate);
 
-var Car = function(maxSpeed, driver){
+var myPastDate = new Date(1980, 9, 12);
+var myFutureDate = new Date(2152, 4, 25);
 
-    this.maxSpeed = maxSpeed;
-    this.driver= driver;
-    this.drive= function (speed, time){
-        console.log(speed * time);
-    };
+console.log(myPastDate);
+console.log(myFutureDate);
 
-    this.logDriver = function(){
-        console.log('Driver name ' + this.driver);
-    };
+var birtday = new Date (1980, 9, 12, 11, 15, 25);
+var birtday2 = new Date (1980, 9, 12, 11, 15, 25);
 
 
+//get the moth of the date (0-january to 11-December)
+console.log(birtday.getMonth());
+
+//get the full year of the date (YYYY)
+console.log(birtday.getFullYear());
+
+//get the date of month (1-31)
+console.log(birtday.getDate());
+
+//get day of the week (0-6)
+console.log(birtday.getDay());
+
+//get the hour of the day(0-23)
+console.log(birtday.getHours());
+
+//get the number of miliseconds since the 1st Jan 1970)
+console.log(birtday.getTime());
+
+if (birtday.getTime() == birtday2.getTime()) {
+
+    console.log("birtday are eqal");
+
+} else {
+
+    console.log('not eqal')
 }
 
-var myCar = new Car(70,'Ninja');
-var myCar2 = new Car(40,'Patryk');
-var myCar3 = new Car(10,'Asia');
-var myCar4 = new Car(90,'Maciej');
-
-myCar.drive(30,5);
-myCar4.logDriver();
