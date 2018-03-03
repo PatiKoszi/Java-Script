@@ -1,24 +1,24 @@
-var myCar2 = {
+//Construction Functions starts with Capital letter
 
-    maxSpeed: 70,                   //properties
-    driver: 'Net Ninja',
-    drive: function(speed, time){  // method
+var Car = function(maxSpeed, driver){
+
+    this.maxSpeed = maxSpeed;
+    this.driver= driver;
+    this.drive= function (speed, time){
         console.log(speed * time);
-    },
+    };
 
-    test: function(){
-        console.log(this); //refers to myCar2 becouse is inside
-    },
+    this.logDriver = function(){
+        console.log('Driver name ' + this.driver);
+    };
 
-    logDriver: function(){
-        console.log('Driver name is ' + this.driver);
-    }
 
-};
+}
 
-console.log(myCar2.maxSpeed);
-myCar2.drive(50,3);             // function
-myCar2.test();                  // function
-myCar2.logDriver();
+var myCar = new Car(70,'Ninja');
+var myCar2 = new Car(40,'Patryk');
+var myCar3 = new Car(10,'Asia');
+var myCar4 = new Car(90,'Maciej');
 
-console.log(myCar2);
+myCar.drive(30,5);
+myCar4.logDriver();
