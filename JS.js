@@ -1,29 +1,24 @@
-var myArray = new Array();
-myArray[0] = 8;
-myArray[1] = "hellow";
-
-console.log(myArray[0]);
-console.log(myArray[1]);
-
-var myCar = new Object();
-myCar.maxSpeed = 50;
-myCar.driver = "Shaun";
-
-console.log(myCar.driver);
-console.log(myCar.maxSpeed);
-
-myCar.drive = function(){console.log("now driving");};
-
-myCar.drive();
-
 var myCar2 = {
-    maxSpeed: 50,
+
+    maxSpeed: 70,                   //properties
     driver: 'Net Ninja',
-    drive: function (speed, time) {
+    drive: function(speed, time){  // method
         console.log(speed * time);
+    },
+
+    test: function(){
+        console.log(this); //refers to myCar2 becouse is inside
+    },
+
+    logDriver: function(){
+        console.log('Driver name is ' + this.driver);
     }
+
 };
 
 console.log(myCar2.maxSpeed);
-myCar2.drive(50, 3);
+myCar2.drive(50,3);             // function
+myCar2.test();                  // function
+myCar2.logDriver();
 
+console.log(myCar2);
